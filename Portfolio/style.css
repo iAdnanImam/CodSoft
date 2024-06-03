@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+body{
+    background-color:black;
+    color: aqua;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #393E46;
+    margin-bottom: 0px;
+}
+.header>h1{
+    font-size: 80px;
+    color: aqua;
+    transition: .3s;
+    font-family:'Caveat',cursive;
+}
+.header-buttons a{
+    display: inline-block;
+    color: aqua;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 20px;
+    transition: .3s;
+    border-bottom: 3px solid transparent;
+    margin-right: 20px;
+}
+.header-buttons a:hover{
+    border-bottom: 3px solid aqua;
+}
+#hero{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding: 30px 15% 10px;
+    transition: 0.3s ;
+    margin-top: 20px;
+}
+.intro{
+    width: 100%;
+    color: aqua;
+}
+.intro h3{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.intro h1{
+    font-size: 50px;
+    line-height: 1;
+}
+.resume{
+    display: inline-flex;
+    padding: 5px 10px;
+    background-color: aqua;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-size: large;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.resume:hover{
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.6);
+}
+.image img{
+    width: 650px;
+    padding: 20px 20px 0 20px;
+    
+}
+.about{
+    margin-top: 0px;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    margin-bottom: 130px;
+}
+.about img{
+    position: relative;
+    width: 350px;
+
+}
+.about h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.about p{
+   text-align: left;
+   font-size: 25px;
+   margin: 2em 0 3em;
+}
+.skills{
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    color: aqua;
+}
+.skills h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+.skill-list li {
+    margin-bottom: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background: transparent;
+}
+.skill-list li:hover{
+    filter:drop-shadow(5px 4px 5px rgba(0, 255, 255,0.6));
+    cursor: pointer;
+}
+.certifications{
+    color: aqua;
+}
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+.certifications h1{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+.cyber-securityWS{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.cyber-securityWS img{
+    width: 350px;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.cyber-securityWS h4{
+    margin-top: 10px;
+    text-align: center; 
+    color: aqua;
+    font-size: 18px;
+}
+.cyber-securityWS :hover{
+    text-shadow: 3px 6px 8px rgba(0, 255, 255, 0.6);
+    cursor: pointer;
+}
+.HR-SQL-B{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.HR-SQL-B img{
+    width: 350px;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.HR-SQL-B h4{
+    margin-top: 10px;
+    text-align: center; 
+    color: aqua;
+    font-size: 18px;
+}
+.HR-SQL-B:hover{
+    text-shadow: 3px 6px 8px rgba(0, 255, 255, 0.6);
+    cursor: pointer;
+}
+.HR-PS-B{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.HR-PS-B img{
+    width: 350px;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.HR-PS-B h4{
+    margin-top: 10px;
+    text-align: center; 
+    color: aqua;
+    font-size: 18px;
+}
+.HR-PS-B:hover{
+    text-shadow: 3px 6px 8px rgba(0, 255, 255, 0.6);
+    cursor: pointer;
+}
+.projects{
+    color: aqua;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: black;
+}
+
+.projects>h1{
+    margin-top: 100px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+.portfolio img{
+    width: 350px;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.6);
+    border-radius: 17px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.portfolio p>.projects-heading{
+    margin-top: 40px;
+    text-align: left; 
+    color: aqua;
+    font-size: 50px;
+    margin-left: 300px;
+}
+.portfolio p>.projects-techstack{
+    color: aqua;
+    font-size: 30px;
+    margin-left: 300px;
+}
+.portfolio p>.projects-techstack>.techused{
+    color: white;
+}
+.portfolio p>.projects-info{
+    color: white;
+    font-size: 20px;
+    margin-left: 300px;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+.calculator img{
+    width: 350px;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.6);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.calculator p>.projects-heading{
+    margin-top: 40px;
+    text-align: left; 
+    color: aqua;
+    font-size: 50px;
+    margin-left: 300px;
+}
+.calculator p>.projects-techstack{
+    color: aqua;
+    font-size: 30px;
+    margin-left: 300px;
+}
+.calculator p>.projects-techstack>.techused{
+    color: white;
+}
+.calculator p>.projects-info{
+    color: white;
+    font-size: 20px;
+    margin-left: 300px;
+}
+.projects:hover{
+    cursor: pointer;
+}
+.calculator p>.projects-heading:hover,
+.portfolio p>.projects-heading:hover{
+border-bottom: 3px solid aqua;
+}
+.contact{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    color: aqua;
+
+}
+.form{
+    max-width: 50em;
+    margin: 1em auto;
+    text-align: center;
+}
+.form>input,textarea{
+    width: 80%;
+    padding: 1rem;
+    font-size: 18px;
+    color: black;
+    background-color: aqua;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.send-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-size: large;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px;  
+}
+.send-button:hover{
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.6);
+
+    }
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #393E46;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-buttons{
+    background-color: aqua;
+    margin-left:50px ;
+    margin-right:50px ;
+    border-radius: 15%;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 8px 8px rgba(0, 255, 255, 0.2);
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width:10px;
+}
