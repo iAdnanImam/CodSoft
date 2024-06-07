@@ -1,0 +1,134 @@
+*{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    transition: .3s;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: #DAAE7D;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left:0;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.menu a{
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right:30px;
+
+}
+.burger-photo{
+    position: absolute;
+    right: 40px;
+    top: 190px;
+    width: 800px;
+}
+.promo{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 35px;
+    justify-content: center;
+    background-color: #DAAE7D;
+    border-radius: 25px;
+    padding: 10px;
+}
+.order-button{
+    display: inline-flex;
+    padding: 5px 10px;
+    background-color: #A53226;
+    color: #DAAE7D;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.promo p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.feature-i{
+    width: 30%;
+    background: #A53226;
+}
+.feature-d{
+    width: 40%;
+    background: #DAAE7D;
+}
+.feature-v{
+    width: 30%;
+    background: #F07151;
+}
+.feature-i, .feature-d, .feature-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140%;
+    margin-bottom: 140%;
+    font-weight: bold;
+}
+footer {
+    background-color: #DAAE7D;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 40px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
